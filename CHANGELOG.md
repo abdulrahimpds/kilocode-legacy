@@ -1,5 +1,15 @@
 # kilo-code
 
+## 5.10.0
+
+### Minor Changes
+
+- [#14](https://github.com/Kilo-Org/kilocode-legacy/pull/14) [`de87b8a`](https://github.com/Kilo-Org/kilocode-legacy/commit/de87b8abc046d8343823d236dfe3d8c483695ee6) Thanks [@supreethjavalli](https://github.com/supreethjavalli)! - Add Oracle Code Assist provider
+
+### Patch Changes
+
+- [#13](https://github.com/Kilo-Org/kilocode-legacy/pull/13) [`bdc9626`](https://github.com/Kilo-Org/kilocode-legacy/commit/bdc96264614ec880b1183a36449a1652419fed19) Thanks [@jan-nikolov](https://github.com/jan-nikolov)! - Rename leftover `roo-preview` and `roo-debug` temp filenames to `kilo-preview` and `kilo-debug`
+
 ## 5.9.0
 
 ### Minor Changes

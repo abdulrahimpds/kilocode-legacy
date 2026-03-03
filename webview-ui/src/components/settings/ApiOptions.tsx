@@ -126,7 +126,7 @@ import {
 	Featherless,
 	VercelAiGateway,
 	DeepInfra,
-	OCA,
+	OCA, // kilocode_change
 	MiniMax,
 	Poe, // kilocode_change
 } from "./providers"
@@ -643,6 +643,7 @@ const ApiOptions = ({
 			)}
 			{/* kilocode_change end */}
 
+			{/* kilocode_change start */}
 			{selectedProvider === "oca" && (
 				<OCA
 					apiConfiguration={apiConfiguration}
@@ -651,6 +652,7 @@ const ApiOptions = ({
 					modelValidationError={modelValidationError}
 				/>
 			)}
+			{/* kilocode_change end */}
 
 			{selectedProvider === "requesty" && (
 				<Requesty

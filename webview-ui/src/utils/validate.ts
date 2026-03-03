@@ -310,10 +310,11 @@ function validateDynamicProviderModelId(
 		return undefined
 	}
 
-	// Allow OCA to pass without a model id; models are fetched after auth
+	// kilocode_change start: Allow OCA to pass without a model id; models are fetched after auth
 	if (provider === "oca") {
 		return undefined
 	}
+	// kilocode_change end
 
 	const modelId = getModelIdForProvider(apiConfiguration, provider)
 
@@ -354,10 +355,11 @@ export function getModelValidationError(
 		return orgError.message
 	}
 
-	// Skip model-id validation for OCA to keep Settings Save/Done usable on first setup
+	// kilocode_change start: Skip model-id validation for OCA to keep Settings Save/Done usable on first setup
 	if (apiConfiguration.apiProvider === "oca") {
 		return undefined
 	}
+	// kilocode_change end
 
 	return validateDynamicProviderModelId(configWithModelId, routerModels)
 }

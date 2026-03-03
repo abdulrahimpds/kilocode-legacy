@@ -1,3 +1,4 @@
+// kilocode_change - new file
 import axios from "axios"
 
 import { getOcaClientInfo } from "../oca/utils/getOcaClientInfo"
@@ -103,8 +104,8 @@ export async function getOCAModels(
 					: supportedApis.includes("CHAT_COMPLETIONS")
 						? "chat-completions"
 						: "unknown",
-                ...({supportsReasoningEffort: info?.is_reasoning_model ? info?.reasoning_effort_options : false }),
-                reasoningEffort: undefined
+				...{ supportsReasoningEffort: info?.is_reasoning_model ? info?.reasoning_effort_options : false },
+				reasoningEffort: undefined,
 			}
 
 			models[modelId] = baseInfo

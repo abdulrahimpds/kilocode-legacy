@@ -1,3 +1,4 @@
+// kilocode_change - new file
 import OpenAI from "openai"
 
 import {
@@ -282,7 +283,7 @@ export class OcaHandler extends BaseProvider implements SingleCompletionHandler 
 			...(useNativeTools && { tools: this.convertToolsForOpenAI(metadata!.tools) }),
 			...(finalToolChoice && { tool_choice: finalToolChoice }),
 			...(useNativeTools && { parallel_tool_calls: metadata?.parallelToolCalls ?? false }),
-            ...(modelInfo.supportsReasoningEffort && { reasoning_effort: this.getReasoningEffort(modelInfo) as any })
+			...(modelInfo.supportsReasoningEffort && { reasoning_effort: this.getReasoningEffort(modelInfo) as any }),
 		}
 
 		let stream

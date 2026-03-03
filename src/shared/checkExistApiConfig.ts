@@ -9,6 +9,7 @@ export function checkExistKey(config: ProviderSettings | undefined) {
 	if (
 		config.apiProvider &&
 		["human-relay", "fake-ai", "claude-code", "openai-codex", "qwen-code", "roo", "kilocode", "oca"].includes(
+			// kilocode_change: add oca
 			config.apiProvider,
 		) // kilocode_change: add kilocode for anonymous access
 	) {

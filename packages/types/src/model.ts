@@ -101,7 +101,7 @@ export const modelInfoSchema = z.object({
 	cacheWritesPrice: z.number().optional(),
 	cacheReadsPrice: z.number().optional(),
 	description: z.string().optional(),
-	banner: z.string().optional(),
+	banner: z.string().optional(), // kilocode_change
 	// Default effort value for models that support reasoning effort
 	reasoningEffort: reasoningEffortExtendedSchema.optional(),
 	minTokensPerCachePoint: z.number().optional(),

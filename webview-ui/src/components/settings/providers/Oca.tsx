@@ -1,3 +1,4 @@
+// kilocode_change - new file
 import * as React from "react"
 import { VSCodeButton } from "@vscode/webview-ui-toolkit/react"
 import { vscode } from "@src/utils/vscode"

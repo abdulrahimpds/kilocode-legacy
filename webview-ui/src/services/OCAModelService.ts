@@ -1,3 +1,4 @@
+// kilocode_change - new file
 import type { ModelInfo } from "@roo-code/types"
 import { vscode } from "@src/utils/vscode"
 

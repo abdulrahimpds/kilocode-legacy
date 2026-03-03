@@ -1,3 +1,4 @@
+// kilocode_change - new file
 import { vscode } from "@src/utils/vscode"
 import { OCA_MSG } from "./ocaMessages"
 
